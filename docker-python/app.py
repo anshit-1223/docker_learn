@@ -1,1 +1,1 @@
-print("Running Python in Docker Container")
+print("Python in Docker Container")
