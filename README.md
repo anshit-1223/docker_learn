@@ -9,3 +9,12 @@ Steps to Stop/Delete container
 docker ps -a - shows all current stopped / exited / running
 docker rmi -f containerid - to remove container
 docker stop imageid
+
+
+DOCKER FILE ARCHITECTURE
+
+FROM - Base Image 
+WORKDIR - directory where code to be kept and later executed
+COPY - copy source code to workdir
+RUN - command to compile the code
+CMD - command to run the compiled code
