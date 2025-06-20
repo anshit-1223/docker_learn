@@ -18,3 +18,15 @@ WORKDIR - directory where code to be kept and later executed
 COPY - copy source code to workdir
 RUN - command to compile the code
 CMD - command to run the compiled code
+
+
+DOCKER NETWORKING
+
+SEVEN TYPES OF NETWORKS -
+Host
+Bridge(default)
+User Defined Bridge (Custom)
+None
+MACVLAN (Docker Swarm)
+IPVLAN
+Overlay
