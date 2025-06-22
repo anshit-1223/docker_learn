@@ -27,6 +27,11 @@ Host
 Bridge(default)
 User Defined Bridge (Custom)
 None
-MACVLAN (Docker Swarm)
+MACVLAN (Docker Swarm) outdated
 IPVLAN
 Overlay
+
+Netowrking Commands 
+
+docker network ls
+docker network create -d bridge
