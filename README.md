@@ -35,3 +35,4 @@ Netowrking Commands
 
 docker network ls
 docker network create -d bridge
+docker run two-tier-flask-app -d -p 5000:5000 
