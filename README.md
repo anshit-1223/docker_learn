@@ -5,6 +5,13 @@ docker images - shows Images
 docker build -t app_name_to_be_created Dockerfile_name
 docker run app_name_created
 
+docker restart containerid
+
+to connect running container
+docker exec -it containerid commands
+OR
+docker exec -it containername bash
+
 Steps to Stop/Delete container
 docker ps -a - shows all current stopped / exited / running
 docker rmi -f containerid - to remove container
@@ -35,4 +42,9 @@ Netowrking Commands
 
 docker network ls
 docker network create -d bridge
-docker run two-tier-flask-app -d -p 5000:5000 
+
+//to pull mysql image
+docker run --name mysql --network mynetwork -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops -d mysql  
+
+//to run flask app in backend
+docker run -d -p 5000:5000 --network mynetwork -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-flask-app:latest
